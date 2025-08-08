@@ -14,6 +14,7 @@ SELECT COUNT(*) FROM calls; -- 50,000
 
 SELECT * FROM abandonments LIMIT 10; -- recheck
 SELECT COUNT(*) FROM abandonments;
+SELECT DISTINCT abandonment_reason FROM abandonments;
 
 SELECT * FROM escalations LIMIT 10;
 SELECT COUNT(*) FROM escalations; -- 5,000

@@ -119,7 +119,6 @@ GROUP BY customer_id
 ORDER BY count DESC
 LIMIT 10;
 
-
 SELECT 
     a.agent_id, 
     a.first_name, 
@@ -131,3 +130,11 @@ JOIN csat c ON a.agent_id = c.agent_id
 WHERE a.first_name = 'Adam'
   AND a.last_name = 'Fox'
   AND c.survey_date = '2025-04-17';
+
+
+-- proof if call_id match in tables abandonments and calls
+SELECT a.call_id
+FROM abandonments a
+LEFT JOIN calls c ON a.call_id = c.call_id
+WHERE c.call_id IS NULL;
+-- output 0 = they all have matches
