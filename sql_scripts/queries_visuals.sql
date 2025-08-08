@@ -107,10 +107,18 @@ FROM escalations;
 SELECT DISTINCT resolution_status
 FROM escalations;
 -- Pending    Closed    Resolved
+SELECT
+    resolution_status,
+    COUNT(*) AS status_count
+FROM escalations
+GROUP BY resolution_status;
+
 
 SELECT DISTINCT escalation_reason
 FROM escalations;
 -- Policy issue    Agent not skilled    Customer request
+
+
 
 --  count of top 10 customer escalations
 SELECT customer_id, COUNT(*) AS count
