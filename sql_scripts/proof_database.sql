@@ -12,6 +12,12 @@ SELECT COUNT(*) FROM agents; -- 200
 SELECT * FROM calls LIMIT 10;
 SELECT COUNT(*) FROM calls; -- 50,000
 
+SELECT
+  MIN(call_duration) AS min_duration,
+  MAX(call_duration) AS max_duration
+FROM calls
+WHERE call_duration IS NOT NULL;
+
 SELECT * FROM abandonments LIMIT 10; -- recheck
 SELECT COUNT(*) FROM abandonments;
 SELECT DISTINCT abandonment_reason FROM abandonments;

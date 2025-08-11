@@ -146,3 +146,15 @@ FROM abandonments a
 LEFT JOIN calls c ON a.call_id = c.call_id
 WHERE c.call_id IS NULL;
 -- output 0 = they all have matches
+
+
+SELECT 
+  a.call_id,
+  c.agent_id,
+  g.department_id,
+  d.department_name
+FROM abandonments a
+JOIN calls       c USING (call_id)
+JOIN agents      g USING (agent_id)
+LEFT JOIN departments d USING (department_id)
+LIMIT 20;
