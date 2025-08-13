@@ -1,77 +1,83 @@
-# Project overview
-...
+📊 BIZ-SaaS-IT Call Center KPI Dashboards
+This repository contains the Power BI dashboards and supporting documentation created for BIZ-SaaS-IT — a SaaS company aiming to optimize customer service performance through actionable KPIs, industry benchmarks, and improvement strategies.
 
-# Installation
+📁 Contents
+Power BI File – Complete dashboards (CSAT, Call Volume & Duration, Abandonments, Escalations).
 
-1. **Clone the repository**:
+ERD – Entity Relationship Diagram showing table relationships.
 
-```bash
-git clone https://github.com/YourUsername/repository_name.git
-```
+Logos & Graphics – Company logo, icons, and infographic assets.
 
-2. **Install UV**
+Presentation Deck – For stakeholder meeting, including KPI explanations and recommendations.
 
-If you're a MacOS/Linux user type:
+Supporting Benchmarks – Industry KPI reference values for comparison.
 
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+🖥 Dashboards Overview
+1. CSAT (Customer Satisfaction)
+KPI: Average CSAT rating (current: 3.02) vs. SaaS industry benchmark (~4.0).
 
-If you're a Windows user open an Anaconda Powershell Prompt and type :
+Key Insights: Improvement opportunities in call handling quality, empathy, and product knowledge.
 
-```bash
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
+Suggestion: Enhanced agent training & coaching to lift CSAT over time.
 
-3. **Create an environment**
+2. Call Volume & Duration
+KPI: Average call duration (~60 minutes) vs. general call center benchmark (~6–10 minutes).
 
-```bash
-uv venv 
-```
+Key Insight: SaaS support complexity justifies longer calls — introduced Quick, Standard, and Deep-Dive call tiers.
 
-3. **Activate the environment**
+Suggestion: Set realistic internal KPIs per tier and reduce duration via targeted training.
 
-If you're a MacOS/Linux user type (if you're using a bash shell):
+3. Abandonments
+KPI: Abandonment rate (current: 2.44%) vs. benchmark (≤ 5%).
 
-```bash
-source ./venv/bin/activate
-```
+Key Insight: Exceptional performance — well below industry norms.
 
-If you're a MacOS/Linux user type (if you're using a csh/tcsh shell):
+Suggestion: Maintain current processes and monitor regularly.
 
-```bash
-source ./venv/bin/activate.csh
-```
+4. Escalations
+KPI: Escalations as % of total calls (current: ~10%).
 
-If you're a Windows user type:
+Key Insight: Customer request and agent skill issues can be reduced through better onboarding and resources.
 
-```bash
-.\venv\Scripts\activate
-```
+Suggestion: Implement targeted training, product documentation updates, and knowledge-sharing sessions.
 
-4. **Install dependencies**:
+5. Customer Journey
+KPI: Call and abandonment patterns per customer, CSAT distribution.
 
-```bash
-uv pip install -r requirements.txt
-```
+Key Insight: Potential redundancy with other dashboards.
 
-# Questions 
-...
+Suggestion: Use for deep-dive analysis only.
 
-# Dataset 
-...
+📌 Moving Forward Recommendations
+Focus on Key KPIs – Maintain and improve CSAT, manage escalation rate, track call duration by tier.
 
-## Main dataset issues
+Agent Development – Stronger onboarding, regular coaching, and shadowing.
 
-- ...
-- ...
-- ...
+Customer Resources – Expand guides and tutorial videos for customers.
 
-## Solutions for the dataset issues
-...
+Video Support – Allow customers to book live product walkthroughs.
 
-# Conclussions
-...
+SLAs – Introduce Service Level Agreements to set customer expectations and team accountability.
 
-# Next steps
-...
+📊 Industry Benchmarks Used
+| KPI                   | Benchmark | Source Link |
+|----------------------|-----------|-------------|
+| CSAT                 | ~4.0      | [GetFeedback](https://www.getfeedback.com/resources/csat-benchmarks) |
+| Call Duration        | 6–10 min general | [Call Centre Helper](https://www.callcentrehelper.com/average-call-handling-time-645.htm) |
+| Abandonment Rate     | ≤ 5%      | [Fullview](https://www.fullview.io/blog/call-abandonment-rate) |
+| Escalation Rate      | ~10%      | [LiveAgent](https://www.ladesk.com) |
+
+
+🛠 Tools & Tech Stack
+Power BI – Data modeling, DAX measures, dashboards.
+
+SQL Server – Data storage and queries.
+
+Excel/CSV – Initial dataset cleaning.
+
+Canva / Image Tools – Logos, icons, infographics.
+
+📬 Contact
+Prepared by: [Delmar Bumanglag]
+Role: Data Analyst & BI Developer
+Contact: [delmar@bumanglag.net]
